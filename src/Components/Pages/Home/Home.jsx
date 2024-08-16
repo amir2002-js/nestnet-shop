@@ -3,7 +3,10 @@ import Header from "../../Affinity/Header/Header.jsx";
 const Home = () => {
     return (
         <div>
-            <Header />
+            {/*head*/}
+            <div className={`mt-5`}>
+                <Header />
+            </div>
         </div>
     );
 };

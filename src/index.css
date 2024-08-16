@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "iran-sans";
+        font-style: normal;
+        src: url("../src/fonts/IRANSansWeb_FaNum_Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "iran-sans-light";
+        font-style: normal;
+        src: url("../src/fonts/IRANSansWeb_FaNum_Light.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "iran-sans-bold";
+        font-style: normal;
+        src: url("../src/fonts/IRANSansWeb_FaNum_Bold.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "iran-sans";
+        font-style: normal;
+        src: url("../src/fonts/IRANSansWeb_FaNum_Medium.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "serif";
+        font-style: normal;
+        src: url("../src/fonts/iranyekanwebmediumfanum.ttf") format("truetype");
+    }
+    @font-face {
+        font-family: "serif-bold";
+        font-style: normal;
+        src: url("../src/fonts/iranyekanwebboldfanum.ttf") format("truetype");
+    }
+}
