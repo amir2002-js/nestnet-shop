@@ -1,6 +1,8 @@
 import Header from "../../Affinity/Header/Header.jsx";
 import ShoppingCartButton from "../../Affinity/ShoppingCart/ShoppingCartButton.jsx";
 import Menu from "../../Affinity/Header/Menu.jsx";
+import Discount from "./Discount/Discount.jsx";
+import Banner from "./Banner/Banner.jsx";
 
 const Home = () => {
     return (
@@ -14,6 +16,11 @@ const Home = () => {
                 <span className={`max-lg:hidden`}>
                     <ShoppingCartButton />
                 </span>
+            </div>
+
+            <div className={`flex items-center justify-between gap-10 mt-5`}>
+                <Banner />
+                <Discount />
             </div>
         </div>
     );

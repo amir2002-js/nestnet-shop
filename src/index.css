@@ -16,7 +16,7 @@
     @font-face {
         font-family: "iran-sans-bold";
         font-style: normal;
-        src: url("../src/fonts/IRANSansWeb_FaNum_Bold.ttf") format("truetype");
+        src: url("../src/fonts/IRANSansWeb_FaNum_Black.ttf") format("truetype");
     }
     @font-face {
         font-family: "iran-sans";
