@@ -5,11 +5,16 @@ const Home = () => {
     return (
         <div>
             {/*head*/}
+<<<<<<< HEAD
             <div className={`mt-5 flex items-center justify-between gap-3 w-full`}>
                 <Header />
                 <span className={`max-lg:hidden`}>
                     <ShoppingCartButton />
                 </span>
+=======
+            <div className={`mt-5`}>
+                <Header />
+>>>>>>> origin/dev
             </div>
         </div>
     );
