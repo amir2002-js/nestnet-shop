@@ -8,6 +8,13 @@ export default {
   ],
 
   theme: {
+      screens: {
+          "sm" : "640px",
+          "md" : "825px",
+          "lg" : "1024px",
+          "xl" : "1280px",
+          "2xl" : "1536px"
+      },
       container:{
           center : true,
           padding: {
@@ -27,7 +34,7 @@ export default {
         "serifBold" : "serif-bold",
     },
       maxWidth:{
-          maxWidth: "1500px"
+          maxWidth: "1700px"
       },
     extend: {
       colors: {
