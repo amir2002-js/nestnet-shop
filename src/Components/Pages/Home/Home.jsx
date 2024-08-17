@@ -3,6 +3,7 @@ import ShoppingCartButton from "../../Affinity/ShoppingCart/ShoppingCartButton.j
 import Menu from "../../Affinity/Header/Menu.jsx";
 import Discount from "./Discount/Discount.jsx";
 import Banner from "./Banner/Banner.jsx";
+import Access from "./Access/Access.jsx";
 
 const Home = () => {
     return (
@@ -18,9 +19,13 @@ const Home = () => {
                 </span>
             </div>
 
-            <div className={`flex items-center justify-between gap-10 mt-5`}>
+            <div className={`flex max-xl:flex-col items-center justify-between gap-10 mt-5`}>
                 <Banner />
                 <Discount />
+            </div>
+
+            <div className={`mt-16 mb-96`}>
+                <Access />
             </div>
         </div>
     );

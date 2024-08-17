@@ -25,8 +25,7 @@
     }
     @font-face {
         font-family: "serif";
-        font-style: normal;
-        src: url("../src/fonts/iranyekanwebmediumfanum.ttf") format("truetype");
+        src: url(../src/fonts/iranyekanwebmediumfanum.ttf) format("truetype");
     }
     @font-face {
         font-family: "serif-bold";
