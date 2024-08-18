@@ -15,3 +15,5 @@ export const data = [
         price: 1400000, url: "../../src/img/keyBoard.jpg", type: "کالای دیجیتال", description: "", id: 5, name: "کیبورد پرووان مدل PKC10",
     },
 ]
+
+export const group = [ "کامپیوتر و لوازم جانبی","کالای دیجیتال","تجهیزات شبکه","انواع کارت حافطه","هدفون،هدست"]
