@@ -24,12 +24,12 @@
         src: url("../src/fonts/IRANSansWeb_FaNum_Medium.ttf") format("truetype");
     }
     @font-face {
-        font-family: "serif";
-        src: url(../src/fonts/iranyekanwebmediumfanum.ttf) format("truetype");
+        font-family: "peyda";
+        src: url(../src/fonts/PeydaFaNum-Regular.ttf) format("truetype");
     }
     @font-face {
-        font-family: "serif-bold";
+        font-family: "peydaBold";
         font-style: normal;
-        src: url("../src/fonts/iranyekanwebboldfanum.ttf") format("truetype");
+        src: url("../src/fonts/PeydaFaNum-ExtraBold.ttf") format("truetype");
     }
 }

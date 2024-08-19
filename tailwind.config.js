@@ -11,9 +11,10 @@ export default {
       screens: {
           "sm" : "640px",
           "md" : "825px",
+          "xmd" : "900px",
           "lg" : "1024px",
           "xl" : "1150px",
-          "2xl" : "1536px"
+          "2xl" : "1436px"
       },
       container:{
           center : true,
@@ -30,11 +31,11 @@ export default {
         "sansLight" : "iran-sans-light",
         "sansBold" : "iran-sans-bold",
 
-        "serif" : "serif",
-        "serifBold" : "serif-bold",
+        "peyda" : "peyda",
+        "peydaBold" : "peydaBold",
     },
       maxWidth:{
-          maxWidth: "1700px"
+          maxWidth: "1600px"
       },
     extend: {
       colors: {
