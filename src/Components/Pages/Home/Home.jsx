@@ -5,6 +5,7 @@ import Discount from "./Discount/Discount.jsx";
 import Banner from "./Banner/Banner.jsx";
 import Access from "./Access/Access.jsx";
 import TopProducts from "./TopProducts/TopProducts.jsx";
+import NewProducts from "./NewProducts/NewProducts.jsx";
 
 const Home = () => {
     return (
@@ -31,8 +32,14 @@ const Home = () => {
                 <Access />
             </div>
 
+            {/*top products*/}
             <div className={`mt-14`}>
                 <TopProducts />
+            </div>
+
+            {/*new products*/}
+            <div className={`mt-14`}>
+                <NewProducts />
             </div>
         </div>
     );
