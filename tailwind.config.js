@@ -14,6 +14,7 @@ export default {
           "xmd" : "900px",
           "lg" : "1024px",
           "xl" : "1150px",
+          "1xl" : "1200px",
           "2xl" : "1436px"
       },
       container:{

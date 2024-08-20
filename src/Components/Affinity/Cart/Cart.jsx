@@ -1,17 +1,22 @@
 import {PiBag} from "react-icons/pi";
 
-function Cart({url , name , price }) {
-    return (
+function Cart({url , name , price , discount}) {
 
-        <div className={`flex flex-col h-[400px] justify-between items-center w-80 border border-gray-300 p-5 rounded-2xl gap-4 shadow`}>
+    return (
+        <div className={`flex flex-col ${discount ? "h-[400px]" : "h-[350px]"} justify-between items-center w-80 max-sm:w-72 mx-auto border border-gray-300 p-5 rounded-2xl gap-4 shadow`}>
             <div className={`flex flex-col items-center gap-2`}>
 
-            <p className={`text-lg`}>
-                 تخفیفات ویژه<span className={`text-primaryLight font-sansBold`}> امروز</span>
-            </p>
+                {
+                    discount?
+                        <p className={`text-lg`}>
+                            تخفیفات ویژه<span className={`text-primaryLight font-sansBold`}> امروز</span>
+                        </p>
+                        :
+                        null
+                }
 
             {/*img*/}
-            <img src={url} className={`w-48`}/>
+            <img src={url} className={`w-48 ${discount? "" : "mt-5"}`}/>
 
             {/*product Names*/}
             <p className={`line-clamp-1`}>

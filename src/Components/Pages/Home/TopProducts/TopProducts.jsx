@@ -17,11 +17,12 @@ function TopProducts() {
                 </button>
             </div>
 
+            {/* top products */}
             <div className={`grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 items-center justify-items-center gap-10 mt-7`}>
                 {data.filter(item => {
                     return item.rate > 4
                 }).map(item => (
-                    <Cart url={item.url} name={item.name} price={item.price}/>
+                    <Cart url={item.url} name={item.name} price={item.price} key={item.id}/>
                 ))}
             </div>
         </div>
