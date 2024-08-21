@@ -36,7 +36,8 @@ export default {
         "peydaBold" : "peydaBold",
     },
       maxWidth:{
-          maxWidth: "1600px"
+          maxWidth: "1600px",
+          95 :"380"
       },
     extend: {
       colors: {

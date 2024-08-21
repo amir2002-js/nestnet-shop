@@ -3,20 +3,7 @@ import Cart from "../Cart/Cart.jsx";
 import Carousel from "../Swiper/Carousel.jsx";
 import {useEffect, useState} from "react";
 
-function Event({title , filteredData , idSwiper }) {
-    const [totalWidth , setTotalWidth] = useState(window.innerWidth);
-
-    useEffect(() => {
-        const handleResize = () => {
-            setTotalWidth(window.innerWidth);
-            console.log(totalWidth);
-        }
-
-        return () =>{
-            window.addEventListener("resize" , handleResize)
-        }
-    } , [])
-
+function Event({title , filteredData , idSwiper , totalWidth }) {
     return (
         <div>
             <div className={``}>
@@ -36,9 +23,6 @@ function Event({title , filteredData , idSwiper }) {
                 {/* top products */}
                 <div className={`w-full flex mt-7`}>
                     <Carousel id={idSwiper} numOfShow={totalWidth >1450? 4 : totalWidth >1200? 3: totalWidth >780? 2:1} swiperData={filteredData} />
-                    {/*{filteredData.map(item => (*/}
-                    {/*    <Cart url={item.url} name={item.name} price={item.price} key={item.id}/>*/}
-                    {/*))}*/}
                 </div>
             </div>
         </div>

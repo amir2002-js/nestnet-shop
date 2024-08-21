@@ -8,7 +8,7 @@ import {
 import Groups from "./Groups.jsx";
 import {useState} from "react";
 
-function Menu(){
+function Menu({totalWidth}){
 
     const [disPlay , setDisPlay] = useState(false);
 
@@ -35,7 +35,7 @@ function Menu(){
 
                    </button>
                    {/* groups */}
-                   <Groups disPlay={disPlay}/>
+                   <Groups totalWidth={totalWidth} disPlay={disPlay}/>
                </li>
 
                {/*صفحه اصلی*/}
