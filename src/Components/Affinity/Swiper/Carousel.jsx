@@ -6,8 +6,8 @@ import Cart from "../Cart/Cart.jsx";
 function Carousel({swiperData , numOfShow , id}) {
 
     return (
-        <>
-            <button className={`swiper-button-prev-${id}`}>
+        <div className={`flex justify-center items-center w-full`}>
+            <button className={`swiper-button-prev-${id} p-1 rounded-lg border hover:bg-secondaryLight transition-all duration-500`}>
                 <GoChevronRight/>
             </button>
             <Swiper
@@ -26,10 +26,10 @@ function Carousel({swiperData , numOfShow , id}) {
                     </SwiperSlide>
                 ))}
             </Swiper>
-            <button className={`swiper-button-next-${id}`}>
+            <button className={`swiper-button-next-${id} p-1 rounded-lg border hover:bg-secondaryLight transition-all duration-500`}>
                 <GoChevronLeft/>
             </button>
-        </>
+        </div>
 )
     ;
 }
