@@ -9,6 +9,8 @@ import NewProducts from "./NewProducts/NewProducts.jsx";
 import {useEffect, useState} from "react";
 import OffSale from "./OffSale/OffSale.jsx";
 import SmBanner from "./SmBanner/SmBanner.jsx";
+import TopSale from "./TopSale/TopSale.jsx";
+import Headset from "./HeadSet/Headset.jsx";
 
 const Home = () => {
     const [totalWidth , setTotalWidth] = useState(window.innerWidth);
@@ -65,6 +67,15 @@ const Home = () => {
             <div className={`flex items-center justify-between gap-10 mt-14 max-md:flex-col max-md:mx-4`}>
                 <SmBanner url={"../../src/img/smBanner1.png"} />
                 <SmBanner url={"../../src/img/smBanner2.png"} />
+            </div>
+
+            {/* most sale */}
+            <div className={`mt-14`}>
+                <TopSale  totalWidth={totalWidth}/>
+            </div>
+
+            <div className={`mt-20`}>
+                <Headset />
             </div>
         </div>
     );

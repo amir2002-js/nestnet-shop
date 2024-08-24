@@ -11,7 +11,7 @@ function OffSale({totalWidth}) {
                 <p className={`text-lg font-peydaBold text-secondaryDark`}>فروش ویژه</p>
                 <span className={`h-px bg-primaryLight flex-grow`}></span>
             </div>
-            <Event2 idSwiper={4} filteredData={newData} totalWidth={totalWidth} />
+            <Event2 idSwiper={4} filteredData={newData} totalWidth={totalWidth} url={"../../src/img/pic1.png"} />
         </div>
     );
 }
