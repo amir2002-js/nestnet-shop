@@ -4,7 +4,7 @@ function App() {
 
   return (
       <div className={``}>
-        <div dir={`rtl`} className={`font-sans container max-w-maxWidth `}>
+        <div dir={`rtl`} className={`font-sans`}>
             <Home />
         </div>
       </div>

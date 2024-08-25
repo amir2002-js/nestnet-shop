@@ -22,7 +22,7 @@ function Headset() {
             <div className={`md:ml-16 ml-8 max-sm:mt-16`}>
                 <button className={`flex justify-between items-center bg-black gap-1 shadow-[0_0_35px_-10px_white] rounded-full`}>
                     <p className={`rounded-full bg-white px-5 py-1`}>خرید</p>
-                    <GoChevronLeft className={`text-white ml-4`} />
+                    <GoChevronLeft className={`text-white ml-3`} />
                 </button>
             </div>
         </div>
