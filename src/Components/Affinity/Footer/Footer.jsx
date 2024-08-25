@@ -54,12 +54,12 @@ function Footer() {
 
     return (
         <div className={` bg-gray-100 text-gray-500`}>
-        <div className={`flex max-lg:flex-col justify-between lg:items-start items-center max-w-maxWidth container gap-14 py-16`}>
+        <div className={`flex max-lg:flex-col justify-between lg:items-start items-center max-w-maxWidth px-4 mx-auto gap-10 py-16 max-sm:py-8`}>
 
             {/*logo & feature*/}
-            <div className={`max-lg:min-w-52 lg:max-w-maxWidth flex flex-col items-center justify-start  gap-14 h-full`}>
+            <div className={`max-lg:min-w-[216px] lg:max-w-maxWidth flex flex-col items-center justify-start  gap-14 h-full`}>
                 <Logo width={'w-72'} />
-                <div className={`lg:w-full w-[90vw] flex lg:flex-col font-peydaBold lg:gap-7 justify-evenly items-center p-4 rounded-2xl bg-gradient-to-t from-gray-200/40 to-gray-300`}>
+                <div className={`lg:w-full w-[90vw] flex lg:flex-col max-sm:flex-wrap max-sm:gap-14 font-peydaBold lg:gap-7 justify-evenly items-center p-4 rounded-2xl bg-gradient-to-t from-gray-200/40 to-gray-300`}>
                     <Feature title={"ارسال سریع"} caption={"از طریق پست و..."} icon={<PiBoxArrowUp className={`text-xl`} />} />
                     <Feature title={"کیفیت بالا"} caption={"بالاترین کیفیت محصولات"} icon={<PiMedal className={`text-2xl`} />} />
                     <Feature title={"پشتیبانی همه روزه"} caption={"حتی جمعه ها"} icon={<PiHeadset className={`text-2xl`} />} />
@@ -67,7 +67,7 @@ function Footer() {
             </div>
 
             {/*main*/}
-            <div className={` flex-grow flex flex-col justify-start items-start`}>
+            <div className={` flex-grow flex flex-col justify-start items-start max-lg:order-last`}>
                 {/*text*/}
                 <p className={`leading-9`}>
                     <span className={`font-sansBold`}>
@@ -86,15 +86,15 @@ function Footer() {
                 </p>
 
                 {/* location */}
-                <div className={`p-5 my-5 border-y border-gray-300 w-full flex justify-between items-center`}>
-                    <div className={`grid gap-4 grid-cols-7 justify-items-start items-center `}>
-                        <div className={`row-span-2 col-span-1`}>
+                <div className={`px-5 py-10 my-10 border-y border-gray-300 w-full flex justify-between items-center max-xsm:flex-col max-xsm:gap-14`}>
+                    <div className={`grid gap-4 grid-cols-7 justify-items-start max-xsm:justify-items-center items-center `}>
+                        <div className={`row-span-2 col-span-1 max-xsm:col-span-7`}>
                             <PiMapPinArea className={"text-[64px]"}/>
                         </div>
-                        <div className={`py-1 px-4 rounded-full bg-slate-300 shadow-lg shadow-gray-800/50 col-span-6 line-clamp-1 truncate `}>
+                        <div className={`py-1 px-4 rounded-full bg-slate-300 shadow-lg shadow-gray-800/50 col-span-6 max-xsm:col-span-7 line-clamp-1 truncate `}>
                             آدرس فروشگاه
                         </div>
-                        <div className={`col-span-6`}>
+                        <div className={`col-span-6 max-xsm:col-span-7 text-center`}>
                             چهار محال و بختیاری - شهر بروجن - خیابان ایران - کوچه ایران - پلاک 102
                         </div>
                     </div>
@@ -108,15 +108,33 @@ function Footer() {
                     </div>
                 </div>
 
-                <div className={`flex items-center justify-between w-full`}>
+                {/* urls */}
+                <div className={`flex items-center justify-between lg:justify-start lg:gap-24 max-sm:flex-col max-sm:gap-14 max-sm:items-start max-sm:mr-5 w-full`}>
                     <UlLi title={"همراه با ما"} li={liData.follow} />
                     <UlLi title={"راهنمای خرید"} li={liData.guide} />
                     <UlLi title={"خدمات مشتریان"} li={liData.customers} />
                 </div>
+
+                {/* site */}
+                <div className={`pt-5 mt-5 border-t border-gray-300 w-full`}>
+                    <p className={`font-sansLight text-gray-400`}>تمامی حقوق سایت محفوظ است 2024</p>
+                </div>
             </div>
 
 
-            <div className={`lg:block hidden w-96 flex justify-start items-start `}>
+            <div className={` min-w-[248px] font-peydaBold text-[30px] text-white`}>
+                <div className={`flex flex-col justify-center items-center bg-sky-500 shadow-lg shadow-blue-400 rounded-2xl px-4 py-6`}>
+
+                <p className={` `}>
+                    همه روزه پاسخگوی شما عزیزان هستیم
+                </p>
+                <p className={`py-5 my-12 w-full text-center border-y border-white`}>
+                    03834552550
+                </p>
+                <div>
+                    <img src="../../src/img/Phone3d.png" alt="" className={`w-56`} />
+                </div>
+                </div>
 
             </div>
         </div>

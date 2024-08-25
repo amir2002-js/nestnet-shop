@@ -28,7 +28,7 @@ const Home = () => {
 
     return (
         <div className={` `}>
-            <div className={`pb-32 container max-w-maxWidth `}>
+            <div className={`container max-w-maxWidth `}>
                 {/*head*/}
                 <div className={`mt-5 flex items-start justify-between gap-3 w-full`}>
                     <div className={`flex flex-col w-full`}>

@@ -13,7 +13,7 @@ function Access() {
     return (
         <div className={`grid grid-cols-1 xl:grid-cols-2 gap-3`}>
 
-            <div className={`grid sm:grid-cols-4 grid-cols-2 gap-5 justify-center items-center justify-items-center min-w-[520px]`}>
+            <div className={`grid sm:grid-cols-4 grid-cols-2 gap-5 justify-center items-center justify-items-center xms:min-w-[520px] max-xsm:w-full`}>
             {data.map((item, index) => (
                 <button key={index} className={`hover:bg-gray-100 transition-all duration-300 w-32 flex flex-col justify-center items-center gap-10 h-52 shadow shadow-black/60 rounded-2xl p-5`} >
                     <div >
