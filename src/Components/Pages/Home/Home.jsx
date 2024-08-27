@@ -27,18 +27,8 @@ const Home = () => {
     } , [])
 
     return (
-        <div className={` `}>
+        <div className={``}>
             <div className={`container max-w-maxWidth `}>
-                {/*head*/}
-                <div className={`mt-5 flex items-start justify-between gap-3 w-full`}>
-                    <div className={`flex flex-col w-full`}>
-                        <Header />
-                        <Menu totalWidth={totalWidth} />
-                    </div>
-                    <span className={`max-lg:hidden`}>
-                        <ShoppingCartButton />
-                    </span>
-                </div>
 
                 {/*banner & carousel*/}
                 <div className={`flex max-xl:flex-col items-center justify-between gap-10 mt-5`}>
