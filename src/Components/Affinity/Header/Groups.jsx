@@ -1,5 +1,4 @@
 import { data, group } from "../../Data/data.js";
-import { useEffect, useState } from "react";
 import CartGroup from "./CartGroup.jsx";
 
 function Groups({ disPlay, totalWidth }) {

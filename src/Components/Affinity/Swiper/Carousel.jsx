@@ -2,7 +2,6 @@ import { GoChevronLeft, GoChevronRight } from "react-icons/go";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import Cart from "../Cart/Cart.jsx";
-import { Link } from "react-router-dom";
 
 function Carousel({ swiperData, numOfShow, id }) {
 	return (
@@ -24,14 +23,13 @@ function Carousel({ swiperData, numOfShow, id }) {
 			>
 				{swiperData.map((item) => (
 					<SwiperSlide key={item.id}>
-						<Link to={`products/${item.id}`} state={{state : item.id}}>
-							<Cart
-								name={item.name}
-								price={item.price}
-								url={item.url}
-								discount={true}
-							/>
-						</Link>
+						<Cart
+							name={item.name}
+							price={item.price}
+							url={item.url}
+                            id={item.id}
+							discount={true}
+						/>{" "}
 					</SwiperSlide>
 				))}
 			</Swiper>

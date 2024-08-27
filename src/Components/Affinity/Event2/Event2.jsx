@@ -1,6 +1,5 @@
 import Carousel from "../Swiper/Carousel.jsx";
 import Cart from "../Cart/Cart.jsx";
-import { Link } from "react-router-dom";
 
 function Event2({ filteredData, totalWidth, url, dir }) {
 	return (
@@ -20,18 +19,12 @@ function Event2({ filteredData, totalWidth, url, dir }) {
 				className={`items-center justify-between gap-4 hidden 2xl:flex col-span-3`}
 			>
 				{filteredData.map((item) => (
-					<Link
-						to={`products/${item.id}`}
-						state={{ state: item.id }}
+					<Cart
 						key={item.id}
-					>
-						<Cart
-							key={item.id}
-							name={item.name}
-							price={item.price}
-							url={item.url}
-						/>
-					</Link>
+						name={item.name}
+						price={item.price}
+						url={item.url}
+					/>
 				))}
 			</div>
 
