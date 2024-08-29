@@ -7,25 +7,25 @@ import {
 
 export default function Specifications({ data }) {
 	return (
-		<div className="w-full h-[420px] flex gap-10 rounded-lg p-5 items-center justify-center">
+		<div className="w-full flex max-2xl:flex-col gap-10 rounded-lg p-5 items-center justify-center">
 			{/* image */}
 			<div className="basis-5/12 flex items-center">
 				<img src={data.url} alt="" />
 			</div>
 
 			{/* Description */}
-			<div className="bg-slate-200 h-full w-full rounded-3xl p-7 flex gap-4 justify-between shadow-lg shadow-black/20 ">
+			<div className="bg-slate-200 h-full w-full max-lg:flex-col rounded-3xl p-7 flex gap-4 justify-between shadow-lg shadow-black/20 ">
 				{/* caption */}
-				<div className="flex flex-col gap-4">
+				<div className="flex flex-col max-lg:items-center gap-4">
 					{/* product name */}
-					<h1 className="text-primaryLight font-sans text-lg pb-4 border-b border-slate-400">
+					<h1 className="text-primaryLight font-sans text-lg pb-4 w-full tracking-tighter border-b border-slate-400">
 						{data.name}
 					</h1>
 
 					{/* cap */}
 					<div className="flex flex-col flex-grow gap-5">
 						<p className="text-xl text-primaryLight font-peydaBold">توضیحات محصول</p>
-						<ul className="mr-5 flex flex-col justify-between h-full font-sansLight text-sm">
+						<ul className="mr-5 flex flex-col justify-between h-full max-lg:gap-6 font-sansLight text-sm">
 							<li>ظرفیت : ۲ ترابایت</li>
 							<li>نوع حافظه : قابل حمل</li>
 							<li>نوع اتصال : باسیم</li>
