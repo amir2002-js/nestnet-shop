@@ -1,6 +1,3 @@
-import Header from "../../Affinity/Header/Header.jsx";
-import ShoppingCartButton from "../../Affinity/ShoppingCart/ShoppingCartButton.jsx";
-import Menu from "../../Affinity/Header/Menu.jsx";
 import Discount from "./Discount/Discount.jsx";
 import Banner from "./Banner/Banner.jsx";
 import Access from "./Access/Access.jsx";
@@ -11,7 +8,6 @@ import OffSale from "./OffSale/OffSale.jsx";
 import SmBanner from "./SmBanner/SmBanner.jsx";
 import TopSale from "./TopSale/TopSale.jsx";
 import Headset from "./HeadSet/Headset.jsx";
-import Footer from "../../Affinity/Footer/Footer.jsx";
 
 const Home = () => {
 	const [totalWidth, setTotalWidth] = useState(window.innerWidth);
@@ -28,7 +24,7 @@ const Home = () => {
 
 	return (
 		<div className={``}>
-			<div className={`container max-w-maxWidth `}>
+			<div>
 				{/*banner & carousel*/}
 				<div
 					className={`flex max-xl:flex-col items-center justify-between gap-10 mt-5`}

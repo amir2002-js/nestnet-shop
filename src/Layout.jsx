@@ -7,9 +7,8 @@ export default function Layout() {
 		<div>
 			<div className={`container max-w-maxWidth`}>
 				<Head />
+				<Outlet />
 			</div>
-
-			<Outlet />
 
 			<div className={`mt-20`}>
 				<Footer />

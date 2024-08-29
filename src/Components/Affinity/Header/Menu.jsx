@@ -41,7 +41,7 @@ function Menu({ totalWidth }) {
 						/>
 					</button>
 					{/* groups */}
-					<Groups totalWidth={totalWidth} disPlay={disPlay} />
+					<Groups totalWidth={totalWidth} disPlay={disPlay} showGroups={showGroups} />
 				</li>
 
 				{/*صفحه اصلی*/}

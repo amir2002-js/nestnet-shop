@@ -1,7 +1,8 @@
+import { useState } from "react";
 import { data, group } from "../../Data/data.js";
 import CartGroup from "./CartGroup.jsx";
 
-function Groups({ disPlay, totalWidth }) {
+function Groups({ disPlay, totalWidth , showGroups }) {
 	// typeNumber
 	const [activeGroup, setActiveGroup] = useState(1);
 
@@ -42,7 +43,9 @@ function Groups({ disPlay, totalWidth }) {
 							})
 							.slice(0, totalWidth > 1200 ? 6 : 4)
 							.map((item) => (
-								<CartGroup dataFiltered={item} key={item.id} />
+								<button key={item.id} onClick={() => {showGroups(false)}}>
+									<CartGroup dataFiltered={item}  />
+								</button>
 							))
 					}
 				</div>

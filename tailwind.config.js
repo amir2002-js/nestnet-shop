@@ -47,6 +47,9 @@ export default {
         secondaryDark: "#ad49e1",
         secondaryLight: "#ebd3f8",
       },
+      dropShadow:{
+        "black" : '0 2px 5px rgba(0, 0, 0, 0.85)',
+      }
     },
   },
   plugins: [],
