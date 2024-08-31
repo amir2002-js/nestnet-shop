@@ -36,11 +36,11 @@ export default {
         "peyda" : "peyda",
         "peydaBold" : "peydaBold",
     },
+    extend: {
       maxWidth:{
           maxWidth: "1600px",
           95 :"380"
       },
-    extend: {
       colors: {
         primaryDark: "#2e073f",
         primaryLight: "#7a1cac",

@@ -17,7 +17,7 @@ export default function Product() {
 		<div>
 			<Navbar name={product.name} type={product.type} />
 			<Specifications data={product} />
-			<Caption />
+			<Caption data={product} />
 		</div>
 	);
 }
