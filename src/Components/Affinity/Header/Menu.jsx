@@ -8,6 +8,7 @@ import {
 } from "react-icons/pi";
 import Groups from "./Groups.jsx";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function Menu({ totalWidth }) {
 	const [disPlay, setDisPlay] = useState(false);
@@ -41,22 +42,28 @@ function Menu({ totalWidth }) {
 						/>
 					</button>
 					{/* groups */}
-					<Groups totalWidth={totalWidth} disPlay={disPlay} showGroups={showGroups} />
+					<Groups
+						totalWidth={totalWidth}
+						disPlay={disPlay}
+						showGroups={showGroups}
+					/>
 				</li>
 
 				{/*صفحه اصلی*/}
 				<li className={`hover:text-primaryLight text-primaryDark`}>
-					<button
-						className={`flex items-center justify-center gap-2`}
-					>
-						{/*icon*/}
-						<div>
-							<PiHouseLine className={` text-2xl`} />
-						</div>
+					<Link to={"/"}>
+						<button
+							className={`flex items-center justify-center gap-2`}
+						>
+							{/*icon*/}
+							<div>
+								<PiHouseLine className={` text-2xl`} />
+							</div>
 
-						{/*text*/}
-						<p>صفحه اصلی</p>
-					</button>
+							{/*text*/}
+							<p>صفحه اصلی</p>
+						</button>
+					</Link>
 				</li>
 
 				{/*وبلاگ*/}
@@ -91,17 +98,19 @@ function Menu({ totalWidth }) {
 
 				{/*تماس با ما*/}
 				<li className={`hover:text-primaryLight text-primaryDark `}>
-					<button
-						className={`flex items-center justify-center gap-2`}
-					>
-						{/*icon*/}
-						<div>
-							<PiPhoneCall className={`text-2xl`} />
-						</div>
+					<Link to={`/contact-us`}>
+						<button
+							className={`flex items-center justify-center gap-2`}
+						>
+							{/*icon*/}
+							<div>
+								<PiPhoneCall className={`text-2xl`} />
+							</div>
 
-						{/*text*/}
-						<p>تماس با ما</p>
-					</button>
+							{/*text*/}
+							<p>تماس با ما</p>
+						</button>
+					</Link>
 				</li>
 			</ul>
 		</div>
