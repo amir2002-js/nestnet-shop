@@ -1,6 +1,7 @@
 import Advertise from "./Advertise/Advertise.jsx";
 import BgIntro from "./bg-Intro/BgIntro";
 import BornOurShop from "./BornOurShop/BornOurShop.jsx";
+import Communicate from "./Communicate/Communicate.jsx";
 import Instro from "./Instro/Instro";
 
 export default function About() {
@@ -15,6 +16,7 @@ export default function About() {
 			<div className="container max-w-maxWidth text-center mt-72 max-sm:mt-48 max-xsm:mt-52">
 				<BornOurShop />
                 <Advertise />
+                <Communicate />
 			</div>
 		</>
 	);
