@@ -2,7 +2,7 @@ import ContactWay from "./ContactWay";
 
 export default function ContactUs() {
 	return (
-		<div className="mb-16">
+		<div className="mb-16 container max-w-maxWidth">
             {/* form & image */}
 			<div className="my-14 flex gap-24">
 				{/* form */}

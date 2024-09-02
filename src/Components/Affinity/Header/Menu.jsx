@@ -8,10 +8,17 @@ import {
 } from "react-icons/pi";
 import Groups from "./Groups.jsx";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import ShowLink from "./ShowLink.jsx";
 
 function Menu({ totalWidth }) {
 	const [disPlay, setDisPlay] = useState(false);
+
+	const myLinks = [
+		{path:"/", text:"صفحه اصلی", icon:<PiHouseLine className={` text-2xl`} /> , id:1},
+		{path:"blog", text:"وبلاگ", icon:<PiFileText className={`text-2xl`} /> , id:2},
+		{path:"about-us", text:"درباره ما", icon:<PiSealWarning className={`text-2xl`} /> , id:3},
+		{path:"contact-us", text:"تماس با ما", icon:<PiPhoneCall className={`text-2xl`} /> , id:4},
+	]
 
 	function showGroups() {
 		setDisPlay(!disPlay);
@@ -48,70 +55,11 @@ function Menu({ totalWidth }) {
 						showGroups={showGroups}
 					/>
 				</li>
-
-				{/*صفحه اصلی*/}
-				<li className={`hover:text-primaryLight text-primaryDark`}>
-					<Link to={"/"}>
-						<button
-							className={`flex items-center justify-center gap-2`}
-						>
-							{/*icon*/}
-							<div>
-								<PiHouseLine className={` text-2xl`} />
-							</div>
-
-							{/*text*/}
-							<p>صفحه اصلی</p>
-						</button>
-					</Link>
-				</li>
-
-				{/*وبلاگ*/}
-				<li className={`hover:text-primaryLight text-primaryDark`}>
-					<button
-						className={`flex items-center justify-center gap-2`}
-					>
-						{/*icon*/}
-						<div>
-							<PiFileText className={`text-2xl`} />
-						</div>
-
-						{/*text*/}
-						<p>وبلاگ</p>
-					</button>
-				</li>
-
-				{/*درباره ما*/}
-				<li className={`hover:text-primaryLight text-primaryDark `}>
-					<button
-						className={`flex items-center justify-center gap-2`}
-					>
-						{/*icon*/}
-						<div>
-							<PiSealWarning className={`text-2xl`} />
-						</div>
-
-						{/*text*/}
-						<p>درباره ما</p>
-					</button>
-				</li>
-
-				{/*تماس با ما*/}
-				<li className={`hover:text-primaryLight text-primaryDark `}>
-					<Link to={`/contact-us`}>
-						<button
-							className={`flex items-center justify-center gap-2`}
-						>
-							{/*icon*/}
-							<div>
-								<PiPhoneCall className={`text-2xl`} />
-							</div>
-
-							{/*text*/}
-							<p>تماس با ما</p>
-						</button>
-					</Link>
-				</li>
+				{
+					myLinks.map(link => (
+						<ShowLink key={link.id} path={link.path} title={link.text} icon={link.icon} />
+					))
+				}
 			</ul>
 		</div>
 	);

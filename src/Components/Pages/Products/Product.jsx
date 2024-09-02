@@ -14,7 +14,7 @@ export default function Product() {
 	}, [id]);
 
 	return (
-		<div>
+		<div className="container max-w-maxWidth">
 			<Navbar name={product.name} type={product.type} />
 			<Specifications data={product} />
 			<Caption data={product} />

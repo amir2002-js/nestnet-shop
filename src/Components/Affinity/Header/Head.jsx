@@ -4,7 +4,7 @@ import ShoppingCartButton from "../ShoppingCart/ShoppingCartButton";
 
 export default function Head({ totalWidth }) {
 	return (
-		<div>
+		<div className="">
 			<div
 				className={`mt-5 flex items-start justify-between gap-3 w-full`}
 			>
@@ -12,7 +12,7 @@ export default function Head({ totalWidth }) {
 					<Header />
 					<Menu totalWidth={totalWidth} />
 				</div>
-				<span className={`max-lg:hidden`}>
+				<span className={`max-lg:hidden bg-white`}>
 					<ShoppingCartButton />
 				</span>
 			</div>

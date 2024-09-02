@@ -23,7 +23,7 @@ const Home = () => {
 	}, []);
 
 	return (
-		<div className={``}>
+		<div className={`container max-w-maxWidth`}>
 			<div>
 				{/*banner & carousel*/}
 				<div
