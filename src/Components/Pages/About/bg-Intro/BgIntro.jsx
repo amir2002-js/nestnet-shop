@@ -1,4 +1,4 @@
-export default function Intro() {
+export default function BgIntro() {
 	return (
 		<div className="absolute -top-10 -z-10 drop-shadow-2xl">
 			<div
