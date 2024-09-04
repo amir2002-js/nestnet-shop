@@ -21,6 +21,7 @@ function Event2({ filteredData, totalWidth, url, dir }) {
 				{filteredData.map((item) => (
 					<Cart
 						key={item.id}
+						id={item.id}
 						name={item.name}
 						price={item.price}
 						url={item.url}
