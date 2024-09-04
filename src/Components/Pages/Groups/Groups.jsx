@@ -8,11 +8,11 @@ export default function Groups() {
 	const typeGetter = pathname.split("/")[2];
 	const filteredData = mydata.filter((data) => data.type == typeGetter);
 
-	console.log(filteredData);
 
 	return (
 		<div className="grid 2xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-8 my-20 max-w-maxWidth container ">
-			{filteredData.map((item) => (
+			{/* نمایش هر محصول از دسته */}
+            {filteredData.map((item) => (
 				<Cart
                 key={item.id}
 					name={item.name}

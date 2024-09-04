@@ -13,12 +13,14 @@ export default function Instro() {
 				را ارائه دهيم. اعتبار ما خلق بهترين تجربه خريد برای مشتريان در
 				محیطی با نشاط، صمیمی است.
 			</figcaption>
+
+			{/* links */}
 			<div className="flex justify-center items-center gap-5 max-sm:flex-col">
-				<button className="py-1 w-52 rounded-xl bg-slate-400 shadow-2xl  text-white font-peydaBold text-2xl">
-					درباره ما
+				<button className="py-1.5 w-52 rounded-xl bg-slate-400  text-white font-peydaBold text-xl">
+					قوانین و مقررات
 				</button>
-				<button className="bg-secondaryDark py-1 w-52 rounded-xl text-white font-peydaBold text-2xl">
-					درباره ما
+				<button className="bg-secondaryDark py-1.5 w-52 rounded-xl text-white font-peydaBold text-xl">
+					تماس با ما
 				</button>
 			</div>
 		</div>

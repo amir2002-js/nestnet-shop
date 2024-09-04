@@ -10,12 +10,19 @@ export default function About() {
 			<div className="relative -z-10 h-[600px] max-sm:h-[850px]">
 				<BgIntro />
 			</div>
+
+			{/* قسمت ابتدایی صفحه */}
 			<div className="container max-w-maxWidth z-20 -mt-[650px] max-sm:-mt-[860px]">
 				<Instro />
 			</div>
+
+
 			<div className="container max-w-maxWidth text-center mt-72 max-sm:mt-48 max-xsm:mt-52">
+				{/* توضیحات درباره سایت و عکس ها */}
 				<BornOurShop />
+				{/* تبلیغ سایت */}
                 <Advertise />
+				{/* ارتباط مشتریان */}
                 <Communicate />
 			</div>
 		</>
