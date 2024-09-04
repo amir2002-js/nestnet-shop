@@ -28,6 +28,7 @@ function Carousel({ swiperData, numOfShow, id }) {
 							price={item.price}
 							url={item.url}
                             id={item.id}
+							type={item.type}
 							discount={true}
 						/>{" "}
 					</SwiperSlide>

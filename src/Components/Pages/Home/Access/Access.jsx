@@ -1,23 +1,26 @@
-import { RiComputerLine, RiMouseLine, RiWifiLine } from "react-icons/ri";
+import { RiComputerLine, RiHeadphoneLine, RiMouseLine, RiWifiLine } from "react-icons/ri";
 import { BsSdCard } from "react-icons/bs";
+import { Link } from "react-router-dom";
+import { group } from "../../../Data/data";
 
 function Access() {
+	const info = group
 	const data = [
 		{
 			icon: <RiMouseLine className={`text-2xl text-primaryDark`} />,
-			title: "کامپیوتر و لوازم جانبی",
+			id: 0,
 		},
 		{
 			icon: <RiComputerLine className={`text-2xl text-primaryDark`} />,
-			title: "کالای دیجیتال",
-		},
-		{
-			icon: <RiWifiLine className={`text-2xl text-primaryDark`} />,
-			title: "تجهیزات شبکه",
+			id: 1,
 		},
 		{
 			icon: <BsSdCard className={`text-2xl text-primaryDark`} />,
-			title: "انواع کارت حافطه",
+			id: 2,
+		},
+		{
+			icon: <RiHeadphoneLine className={`text-2xl text-primaryDark`} />,
+			id: 3,
 		},
 	];
 
@@ -26,14 +29,15 @@ function Access() {
 			<div
 				className={`grid sm:grid-cols-4 grid-cols-2 gap-5 justify-center items-center justify-items-center xms:min-w-[520px] max-xsm:w-full`}
 			>
-				{data.map((item, index) => (
-					<button
-						key={index}
-						className={`hover:bg-gray-100 transition-all duration-300 w-32 flex flex-col justify-center items-center gap-10 h-52 shadow shadow-black/60 rounded-2xl p-5`}
-					>
-						<div>{item.icon}</div>
-						<p className={` text-sm`}>{item.title}</p>
-					</button>
+				{data.map((item) => (
+					<Link to={`/products/${info[item.id][2]}`} key={item.id}>
+						<button
+							className={`hover:bg-gray-100 transition-all duration-300 w-32 flex flex-col justify-center items-center gap-10 h-52 shadow shadow-black/60 rounded-2xl p-5`}
+						>
+							<div>{item.icon}</div>
+							<p className={` text-sm`}>{info[item.id][0]}</p>
+						</button>
+					</Link>
 				))}
 			</div>
 
@@ -48,7 +52,7 @@ function Access() {
 				<p className={`text-white font-sansBold`}>سیستم های قدرتمند</p>
 				<p className={`text-white font-sansBold`}>ولی مقرون به صرفه</p>
 				<button
-					className={`rounded-full w-64 flex justify-center items-center bg-primaryDark  mt-2 mr-10 py-1 text-white`}
+					className={`rounded-full sm:w-64 w-48 flex justify-center items-center bg-primaryDark  mt-2 sm:mr-10 max-sm:mx-auto py-1 text-white`}
 				>
 					مشاهده
 				</button>

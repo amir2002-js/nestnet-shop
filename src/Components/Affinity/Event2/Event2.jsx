@@ -25,6 +25,7 @@ function Event2({ filteredData, totalWidth, url, dir }) {
 						name={item.name}
 						price={item.price}
 						url={item.url}
+						type={item.type}
 					/>
 				))}
 			</div>

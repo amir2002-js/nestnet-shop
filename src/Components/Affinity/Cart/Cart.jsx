@@ -1,12 +1,12 @@
 import { PiBag } from "react-icons/pi";
 import { Link } from "react-router-dom";
 
-function Cart({ url, name, price, discount, id }) {
+function Cart({ url, name, price, discount, id , type }) {
 	return (
 		<div
-			className={`flex flex-col ${discount ? "h-[400px]" : "h-[350px]"} justify-between items-center w-80 max-sm:w-72 mx-auto border border-gray-300 p-5 rounded-2xl gap-4 shadow`}
+			className={`flex flex-col ${discount ? "h-[400px]" : "h-[350px]"} justify-between items-center w-[250px] max-sm:w-72 mx-auto border border-gray-300 p-5 rounded-2xl gap-4 shadow`}
 		>
-			<Link to={`products/${id}`} state={{ state: id }}>
+			<Link to={`/products/${type}/${id}`} state={{ state: id }}>
 				<div className={`flex flex-col items-center gap-2`}>
 					{discount ? (
 						<p className={`text-lg`}>
