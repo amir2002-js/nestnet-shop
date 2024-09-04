@@ -4,9 +4,9 @@ export default function ContactUs() {
 	return (
 		<div className="mb-16 container max-w-maxWidth">
             {/* form & image */}
-			<div className="my-14 flex gap-24">
+			<div className="my-14 flex max-md:flex-col items-center justify-center gap-24">
 				{/* form */}
-				<div className="w-1/2">
+				<div className="w-1/2 max-md:w-10/12">
 					<h1 className="text-2xl flex gap-2 text-center justify-center">
 						<p>فرم تماس با</p>
 						<span className="font-peydaBold text-primaryLight">
@@ -41,7 +41,7 @@ export default function ContactUs() {
 				</div>
 
 				{/* image */}
-				<div className="w-1/2">
+				<div className="w-1/2 max-md:w-10/12">
 					<img src="../../src/img/contact-us.png" alt="" />
 				</div>
 			</div>
