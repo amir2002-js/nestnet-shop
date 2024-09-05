@@ -7,18 +7,45 @@ import {
 	PiSealWarning,
 } from "react-icons/pi";
 import Groups from "./Groups.jsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ShowLink from "./ShowLink.jsx";
+import { useLocation } from "react-router-dom";
 
 function Menu({ totalWidth }) {
+	const { pathname } = useLocation();
+
 	const [disPlay, setDisPlay] = useState(false);
 
+	useEffect(() => {
+		setDisPlay(false)
+	} , [pathname])
+
 	const myLinks = [
-		{path:"/", text:"صفحه اصلی", icon:<PiHouseLine className={` text-2xl`} /> , id:1},
-		{path:"blog", text:"وبلاگ", icon:<PiFileText className={`text-2xl`} /> , id:2},
-		{path:"about-us", text:"درباره ما", icon:<PiSealWarning className={`text-2xl`} /> , id:3},
-		{path:"contact-us", text:"تماس با ما", icon:<PiPhoneCall className={`text-2xl`} /> , id:4},
-	]
+		{
+			path: "/",
+			text: "صفحه اصلی",
+			icon: <PiHouseLine className={` text-2xl`} />,
+			id: 1,
+		},
+		{
+			path: "blog",
+			text: "وبلاگ",
+			icon: <PiFileText className={`text-2xl`} />,
+			id: 2,
+		},
+		{
+			path: "about-us",
+			text: "درباره ما",
+			icon: <PiSealWarning className={`text-2xl`} />,
+			id: 3,
+		},
+		{
+			path: "contact-us",
+			text: "تماس با ما",
+			icon: <PiPhoneCall className={`text-2xl`} />,
+			id: 4,
+		},
+	];
 
 	function showGroups() {
 		setDisPlay(!disPlay);
@@ -55,11 +82,14 @@ function Menu({ totalWidth }) {
 						showGroups={showGroups}
 					/>
 				</li>
-				{
-					myLinks.map(link => (
-						<ShowLink key={link.id} path={link.path} title={link.text} icon={link.icon} />
-					))
-				}
+				{myLinks.map((link) => (
+					<ShowLink
+						key={link.id}
+						path={link.path}
+						title={link.text}
+						icon={link.icon}
+					/>
+				))}
 			</ul>
 		</div>
 	);

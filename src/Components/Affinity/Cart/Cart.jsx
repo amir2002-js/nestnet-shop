@@ -21,7 +21,7 @@ function Cart({ url, name, price, discount, id , type }) {
 					{/*img*/}
 					<img
 						src={url}
-						className={`w-48 ${discount ? "" : "mt-5"}`}
+						className={`w-48 min-h-28 my-4 ${discount ? "" : "mt-5"}`}
 					/>
 
 					{/*product Names*/}

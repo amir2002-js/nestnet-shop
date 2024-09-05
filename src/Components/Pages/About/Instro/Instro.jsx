@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function Instro() {
 	return (
 		<div className=" flex flex-col z-20 justify-evenly h-[400px] max-sm:h-[600px] items-center container max-w-maxWidth sm:mt-20 mt-10 font-sansLight sm:gap-10">
@@ -19,9 +21,9 @@ export default function Instro() {
 				<button className="py-1.5 w-52 rounded-xl bg-slate-400  text-white font-peydaBold text-xl">
 					قوانین و مقررات
 				</button>
-				<button className="bg-secondaryDark py-1.5 w-52 rounded-xl text-white font-peydaBold text-xl">
+				<Link to={`/contact-us`} className="bg-secondaryDark py-1.5 w-52 text-center rounded-xl text-white font-peydaBold text-xl">
 					تماس با ما
-				</button>
+				</Link>
 			</div>
 		</div>
 	);
