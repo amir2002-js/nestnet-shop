@@ -1,26 +1,17 @@
 import { group } from "../../../Data/data";
 import ButtonSecondary from "../../../Affinity/ButtonSecondary/ButtonSecondary";
-import { useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { useLocation } from "react-router-dom";
 
 export default function Select() {
     const pathname  = useLocation().pathname.split("/");
 	const [selectOption, setSelectOption] = useState(pathname[2]== undefined? "all" : pathname[2]);
-    const navigation = useNavigate()
-    
-    useEffect(() => {
-        console.log(selectOption);
-    },[])
  
 
     function changeSelectOption(item){
         setSelectOption(item);
     }
 
-    function changePathname(url){
-        console.log(url);
-        navigation(`products/${url}`)
-    }
 
 	return (
 		<form
@@ -45,7 +36,7 @@ export default function Select() {
 				))}
 			</select>
 
-			<ButtonSecondary clickHandler={selectOption == "all"? changePathname("") :() => changePathname(selectOption)}>اعمال فیلتر</ButtonSecondary>
+			<ButtonSecondary url={`/products/${selectOption == "all" ? "" : selectOption}`}>اعمال فیلتر</ButtonSecondary>
 			<button
             onClick={
                 () => changeSelectOption("all")
