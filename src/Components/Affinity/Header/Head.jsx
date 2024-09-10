@@ -12,7 +12,7 @@ export default function Head({ totalWidth }) {
 					<Header />
 					<Menu totalWidth={totalWidth} />
 				</div>
-				<span className={`max-lg:hidden bg-white`}>
+				<span className={`max-lg:hidden `}>
 					<ShoppingCartButton />
 				</span>
 			</div>

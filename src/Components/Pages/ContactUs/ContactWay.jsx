@@ -43,7 +43,7 @@ export default function ContactWay() {
 					>
 						{item.icon}
 						<p className="text-lg">{item.title}</p>
-						<figcaptio0 className={`text-sm font-sansLight`}>{item.description}</figcaptio0>
+						<figcaption className={`text-sm font-sansLight`}>{item.description}</figcaption>
 					</div>
 				))}
 			</div>

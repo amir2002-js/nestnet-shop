@@ -10,7 +10,9 @@ import ShoppingCartButton from "../ShoppingCart/ShoppingCartButton.jsx";
 
 function Header() {
 	return (
-		<nav className={`bg-white border border-gray-300 rounded-lg shadow w-full`}>
+		<nav
+			className={`bg-white border border-gray-300 rounded-lg shadow w-full`}
+		>
 			<div className={`flex justify-between items-center p-5 gap-10`}>
 				{/*berger menu*/}
 				<button className={`hidden max-md:block`}>

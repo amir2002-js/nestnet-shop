@@ -17,8 +17,8 @@ function Menu({ totalWidth }) {
 	const [disPlay, setDisPlay] = useState(false);
 
 	useEffect(() => {
-		setDisPlay(false)
-	} , [pathname])
+		setDisPlay(false);
+	}, [pathname]);
 
 	const myLinks = [
 		{

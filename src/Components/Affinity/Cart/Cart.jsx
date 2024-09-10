@@ -1,7 +1,8 @@
 import { PiBag } from "react-icons/pi";
 import { Link } from "react-router-dom";
+import AddToBasketBtn from "./AddToBasketBtn";
 
-function Cart({ url, name, price, discount, id , type }) {
+function Cart({ url, name, price, discount, id, type }) {
 	return (
 		<div
 			className={`flex flex-col ${discount ? "h-[400px]" : "h-[350px]"} justify-between items-center w-[250px] max-sm:w-72 mx-auto border border-gray-300 p-5 rounded-2xl gap-4 shadow`}
@@ -34,11 +35,7 @@ function Cart({ url, name, price, discount, id , type }) {
 				className={`flex justify-between items-center border-t border-gray-300 w-full pt-3`}
 			>
 				{/*icon*/}
-				<button
-					className={`p-2 rounded-lg bg-secondaryDark text-white hover:ring-4 ring-secondaryDark/60 hover:bg-white hover:text-secondaryDark transition-all duration-300`}
-				>
-					<PiBag className={`text-2xl`} />
-				</button>
+				<AddToBasketBtn id={id} />
 
 				{/*price*/}
 				<p>{price} تومان</p>

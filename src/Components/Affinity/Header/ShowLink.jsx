@@ -5,7 +5,9 @@ export default function ShowLink({ icon, title, path }) {
 		<li className={`hover:text-primaryLight text-primaryDark`}>
 			<NavLink
 				to={path}
-				className={({ isActive }) => (isActive ? "text-primaryLight" : null)}
+				className={({ isActive }) =>
+					isActive ? "text-primaryLight" : null
+				}
 			>
 				<button className={`flex items-center justify-center gap-2`}>
 					{/*icon*/}
