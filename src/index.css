@@ -3,33 +3,33 @@
 @tailwind utilities;
 
 @layer base {
-    @font-face {
-        font-family: "iran-sans";
-        font-style: normal;
-        src: url("../src/fonts/IRANSansWeb_FaNum_Medium.ttf") format("truetype");
-    }
-    @font-face {
-        font-family: "iran-sans-light";
-        font-style: normal;
-        src: url("../src/fonts/IRANSansWeb_FaNum_Light.ttf") format("truetype");
-    }
-    @font-face {
-        font-family: "iran-sans-bold";
-        font-style: normal;
-        src: url("../src/fonts/IRANSansWeb_FaNum_Black.ttf") format("truetype");
-    }
-    @font-face {
-        font-family: "iran-sans";
-        font-style: normal;
-        src: url("../src/fonts/IRANSansWeb_FaNum_Medium.ttf") format("truetype");
-    }
-    @font-face {
-        font-family: "peyda";
-        src: url(../src/fonts/PeydaFaNum-Regular.ttf) format("truetype");
-    }
-    @font-face {
-        font-family: "peydaBold";
-        font-style: normal;
-        src: url("../src/fonts/PeydaFaNum-ExtraBold.ttf") format("truetype");
-    }
+	@font-face {
+		font-family: "iran-sans";
+		font-style: normal;
+		src: url("../src/fonts/IRANSansWeb_FaNum_Medium.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "iran-sans-light";
+		font-style: normal;
+		src: url("../src/fonts/IRANSansWeb_FaNum_Light.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "iran-sans-bold";
+		font-style: normal;
+		src: url("../src/fonts/IRANSansWeb_FaNum_Black.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "iran-sans";
+		font-style: normal;
+		src: url("../src/fonts/IRANSansWeb_FaNum_Medium.ttf") format("truetype");
+	}
+	@font-face {
+		font-family: "peyda";
+		src: url(../src/fonts/PeydaFaNum-Regular.ttf) format("truetype");
+	}
+	@font-face {
+		font-family: "peydaBold";
+		font-style: normal;
+		src: url("../src/fonts/PeydaFaNum-ExtraBold.ttf") format("truetype");
+	}
 }

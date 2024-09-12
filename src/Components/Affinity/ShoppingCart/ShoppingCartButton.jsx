@@ -1,9 +1,12 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { PiShoppingBagFill } from "react-icons/pi";
 import Basket from "./Basket";
 
 function ShoppingCartButton() {
 	const [isOpen, setIsOpen] = useState(false);
+	const numberOfBasket = JSON.parse(localStorage.getItem("products"));
+
+	const num = new Set(numberOfBasket);
 
 	function onClickHandler() {
 		setIsOpen(!isOpen);
@@ -21,7 +24,7 @@ function ShoppingCartButton() {
 							className={`text-primaryDark max-lg:text-white text-2xl md:text-3xl`}
 						/>
 					</div>
-					<p className={`max-lg:hidden`}>0</p>
+					<p className={`max-lg:hidden`}>{num.size}</p>
 				</span>
 			</button>
 			<Basket changeOpen={setIsOpen} isOpen={isOpen} />

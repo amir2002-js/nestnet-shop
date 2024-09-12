@@ -22,7 +22,7 @@ export default function Layout() {
 			) : (
 				<>
 					<div className={`container max-w-maxWidth`}>
-						<Head /> 
+						<Head />
 					</div>
 
 					<Outlet />

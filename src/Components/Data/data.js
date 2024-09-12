@@ -336,9 +336,9 @@ export const dataSwiper = [
 ];
 
 export const group = [
-	["کالای دیجیتال", 1 , "digital"],
-	["کامپیوتر و لوازم جانبی", 2 , "pc-Accessories"],
-	["انواع کارت حافطه", 3 , "ssd"],
+	["کالای دیجیتال", 1, "digital"],
+	["کامپیوتر و لوازم جانبی", 2, "pc-Accessories"],
+	["انواع کارت حافطه", 3, "ssd"],
 	["هدفون،هدست", 4, "headphone-headset"],
-	["تجهیزات شبکه", 5 , "network-equipment"],
+	["تجهیزات شبکه", 5, "network-equipment"],
 ];
