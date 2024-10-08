@@ -1,10 +1,10 @@
 import {
 	PiCaretUp,
-	PiFileText,
 	PiGridFourLight,
 	PiHouseLine,
 	PiPhoneCall,
 	PiSealWarning,
+	PiShoppingBag,
 } from "react-icons/pi";
 import Groups from "./Groups.jsx";
 import { useEffect, useState } from "react";
@@ -28,9 +28,9 @@ function Menu({ totalWidth }) {
 			id: 1,
 		},
 		{
-			path: "blog",
-			text: "وبلاگ",
-			icon: <PiFileText className={`text-2xl`} />,
+			path: "products/",
+			text: "محصولات",
+			icon: <PiShoppingBag className={`text-2xl`} />,
 			id: 2,
 		},
 		{
